@@ -4,7 +4,7 @@ from mojang import MojangAPI
 userinput = str(input("Enter your minecraft username >>> "))
 
 uuid = MojangAPI.get_uuid(userinput)
-requestlink = str("https://api.hypixel.net/player?key=73a31f3e-7d06-477d-8f53-1157e6a183bd&uuid="+ uuid)
+requestlink = str("https://api.hypixel.net/player?key= API KEY &uuid="+ uuid)
 
 hydata = requests.get(requestlink).json()
 
